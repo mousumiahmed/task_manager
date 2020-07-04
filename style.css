@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #7ec7b2;
+    color: #333;
+  }
+  
+  .container {
+    padding: 5%;
+  }
+  
+  .column {
+    background: #f5f5f5;
+    margin-right: 2%;
+    padding: 1%;
+    border-radius: 3px;
+    width: 32%;
+    float: left;
+    min-height: 200px;
+  }
+  .column:last-of-type {
+    margin-right: 0;
+  }
+  .column .column-title {
+    font-weight: bold;
+    margin: 5px 0 20px;
+    text-align: center;
+  }
+  .column .card {
+    background: #fff;
+    min-height: 50px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 250ms;
+    transition: -webkit-transform 250ms;
+    transition: transform 250ms;
+    transition: transform 250ms, -webkit-transform 250ms;
+  }
+  .column .card.selected {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    z-index: 1;
+  }
+  .column textarea {
+    border: none;
+    resize: vertical;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .column textarea:focus {
+    outline: none;
+  }
+
+  .taskstyle1{
+      color:blue
+  }
+  .taskstyle2{
+    color:purple
+}
+.taskstyle3{
+    color:green
+}
